@@ -1,0 +1,2 @@
+# HackerRankPractice
+some resolved excercises
