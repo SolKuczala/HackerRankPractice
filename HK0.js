@@ -5,8 +5,7 @@ function sockMerchant(n, ar) {
     let b = 1
     let sortedArray= ar.sort(function compareNumbers(a, b) {
         return a - b})
-        console.log(sortedArray);
-        
+    
     while(b < n){
         if(sortedArray[a] === sortedArray[b]){
             pares++
@@ -18,6 +17,5 @@ function sockMerchant(n, ar) {
         }
     }
     return pares
-    
 }
 console.log(sockMerchant(9,[10, 20, 20, 10, 10, 30, 50, 10, 20]));
