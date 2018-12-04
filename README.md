@@ -1,2 +1,2 @@
 # HackerRankPractice
-some resolved excercises
+my solutions for some excercises
