@@ -1,5 +1,5 @@
 function toLeft(a,d) {
-    for(i = 0;i < d;i++){
+    for(let i = 0;i < d;i++){
         let sortedA = a
         let alFinal = a.shift()
          a.push(alFinal)
