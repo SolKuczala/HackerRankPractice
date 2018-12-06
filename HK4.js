@@ -1,4 +1,3 @@
-/// staircase
 function staircase(n) {
     let x = []
     for (let i = 0; i < n; i++){
@@ -9,8 +8,6 @@ function staircase(n) {
         x.push('#');
         x.shift();
         console.log(x.join(' '));
-        
-        
     }
  }
  console.log(staircase(6));

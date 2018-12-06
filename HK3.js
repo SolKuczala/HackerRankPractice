@@ -25,9 +25,7 @@
 
 }
 /////Mejora
- 
-
-function plusMinus(arr) {
+ function plusMinus(arr) {
     let valoresCalculados = [0,0,0]
 
     arr.forEach(element => {
@@ -45,37 +43,3 @@ function plusMinus(arr) {
         .map(element => element.toFixed(6))
         .forEach(element => console.log(element))
 }
-
-////ejemplo mas funcional de otra persona
-
-function plusMinus(arr) {
-    [   
-        {fn:  e => e > 0 ,  q: 0},
-        {fn:  e => e < 0 ,  q: 0},
-        {fn:  e => e == 0,  q: 0}
-    ]
-    .forEach(indicador => {
-        arr.forEach(element => {
-            if(indicador.fn(element)){
-                indicador.q++
-            }   
-        });
-        console.log(Number(indicador.q/arr.length).toFixed(6));
-    })
-}
-
-////y otro ejemplo mas
-
-function plusMinus(arr) {
-    [   
-        e => e > 0,
-        e => e < 0,
-        e => e == 0
-    ]
-    .forEach(isType => {
-        let cantidad = arr.filter(isType).length
-        console.log(Number(cantidad/arr.length).toFixed(6))
-    })
-}
-
-console.log(plusMinus([-4,3,-9,0,4,1]))

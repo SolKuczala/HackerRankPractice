@@ -1,5 +1,4 @@
 function diagonalDifference(arr) {
-    
      let n = arr.length
      let diagonalUno= 0 
      let diagonalDos= 0

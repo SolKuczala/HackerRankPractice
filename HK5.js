@@ -8,8 +8,6 @@ function compareTriplets(alice, bob) {
         } else if(alice[i] < bob[i]){
             bobPoints += 1;
         }
-    
     }
     return [alicePoints,bobPoints];
-
 }
