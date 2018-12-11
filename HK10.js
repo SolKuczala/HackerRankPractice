@@ -5,9 +5,9 @@ function gradingStudents(grades) {
             e += 5 - resto
         }
         return e
-    })       
+    })
 }
 
 console.log(gradingStudents([73, 67, 38, 33]));
-let la = [3,2,3,3]
+
 
