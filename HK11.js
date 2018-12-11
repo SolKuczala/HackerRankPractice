@@ -1,23 +1,19 @@
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
-    let cantMadentro = 0
-    let cantNadentro = 0
-    let arrPosMan = apples.map(e => {
-        return e + a
-    })
-    let arrPosNar = oranges.map(e => {
-        return e + b
-    })
-    let miVector = t - s
-    arrPosMan.map(e => {
-        if (e > 6 && e < 12) {
-            cantMadentro++
+    let manzanasAdentro = 0
+    let naranjasAdentro = 0
+    apples.map(e => {
+        let posicionada=e + a
+        if (posicionada > 6 && posicionada < 12) {
+            manzanasAdentro++
         }
     })
-    arrPosNar.map(e => {
-        if (e > 6 && e < 12) {
-            cantNadentro++
+    oranges.map(e => {
+        let posicionada2= e + b
+        if (posicionada2 > 6 && posicionada2 < 12) {
+            naranjasAdentro++
         }
     })
-    return [cantMadentro, cantNadentro]
+   return [manzanasAdentro, naranjasAdentro]
+    
 }
 console.log(countApplesAndOranges(7, 11, 5, 15, [-2, 2, 1], [5, -6]));
